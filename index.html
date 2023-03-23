@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>face-api笑顔度数値表示</title>
+<meta charset="utf-8">
+<style>
+  #cameraArea {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  #canvas {
+    position: absolute;
+    left: 0;
+  }
+
+</style>
+</head>
+<body>
+<main>
+  <div id="cameraArea">
+    <video id="camera" width="640" height="480" playsinline muted autoplay></video>
+    <canvas id="canvas"></canvas>
+    
+  </div>
+
+  <script src="js/face-api.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
